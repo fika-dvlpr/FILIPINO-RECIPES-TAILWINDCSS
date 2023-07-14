@@ -606,6 +606,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -924,6 +928,15 @@ video {
 
   .md\:rounded-xl{
     border-radius: 0.75rem;
+  }
+
+  .md\:border-r-4{
+    border-right-width: 4px;
+  }
+
+  .md\:border-gray-300{
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
   }
 
   .md\:bg-white{
