@@ -572,6 +572,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.fixed{
+  position: fixed;
+}
+
 .m-6{
   margin: 1.5rem;
 }
@@ -608,6 +612,10 @@ video {
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .inline-block{
@@ -771,6 +779,11 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-center{
