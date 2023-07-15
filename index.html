@@ -32,7 +32,7 @@
         <ul class=" md:pt-8 md:flex flex-col items-center md:gap-4 hidden" id="menu">
           <li class="mx-6">
             <a class="transition ease-in duration-200 flex gap-2 tracking-wider py-1 px-2 md:px-6 md:rounded-xl md:text-secondary-100 md:bg-white md:active:bg-slate-200 text-white border-l-4 border-white"
-              href="#">
+              href="index.html">
               <span>Home</span>
               <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
@@ -43,7 +43,7 @@
           </li>
           <li class="mx-6">
             <a class="transition ease-in duration-200 mt-4 flex gap-2 tracking-wider py-1 px-2 md:px-6 md:rounded-xl md:hover:text-secondary-100 md:hover:bg-white md:active:bg-slate-200 text-white border-l-4 border-secondary-100 hover:border-white"
-              href="#">
+              href="dist/pages/dishes.html">
               <span>Dishes</span>
               <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
@@ -92,10 +92,10 @@
     </div>
 
 
-    <main class="w-full h-screen px-12 md:col-span-3 py-8">
+    <main class="w-full h-screen px-12 md:col-span-3 relative flex items-center justify-center md:justify-end">
       <!-- SIGNUP - LOGIN BUTTON -->
-      <div class=" flex justify-center md:justify-end text-white">
-        <div class="my-8 md:my-6 uppercase text-xs cursor-pointer hidden md:block">
+      <div class="flex justify-center md:justify-end text-white">
+        <div class="z-10 my-8 md:my-6 uppercase text-xs cursor-pointer hidden">
           <a class=" mt-2 tracking-wider border-2 border-secondary-100 bg-secondary-100 text-white py-1 px-2 rounded-lg active:bg-secondary-200"
             href="#">Sign up</a>
           <a class=" mt-2 tracking-wider border-2 text-secondary-100 border-secondary-100 py-1 px-3 rounded-lg ml-1 hover:bg-secondary-100 hover:text-white active:bg-secondary-200 transition ease-linear duration-200"
@@ -103,77 +103,21 @@
             in</a>
         </div>
       </div>
-
-      <div class="flex flex-col text-center md:text-start">
-        <h1 class="text-4xl tracking-widest">Filipino Recipes</h1>
-        <p>#Sarap ng lutong pinoy</p>
+      <!-- BG HOME -->
+      <div class="absolute top-0 left-0 z-0">
+        <img class="w-screen h-screen object-cover grayscale" src="/dist/img/home-bg.jpg" alt="Home Background">
       </div>
 
-      <!-- CARD CONTAINER -->
-      <div class="mt-8 grid md:grid-cols-3 gap-10">
-        <!-- CARD -->
-        <div class="card hover:shadow-xl">
-          <img src="dist/img/chicken-adobo-ge0fe2fae3_1280.png" alt="pinoy chicken adobo"
-            class="w-full h-40 md:h-52 object-cover">
-          <div class="p-6">
-            <h1 class="text-lg">Chicken Adobo</h1>
-            <p class="text-sm">- Lorem, ipsum</p>
-            <button class="bg-secondary-100 text-white py-1 px-2 rounded-full mt-2 text-sm active:bg-secondary-200">Show
-              Ingredients</button>
-          </div>
-          <div class="badge flex items-center gap-1">
-            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>30 Minutes</span>
-          </div>
-        </div>
-
-        <!-- CARD -->
-        <div class="card hover:shadow-xl">
-          <img src="dist/img/chicken-tinola.jpg" alt="pinoy chicken adobo" class="w-full h-40 md:h-52 object-cover">
-          <div class="p-6">
-            <h1 class="text-lg">Chicken Tinola</h1>
-            <p class="text-sm">- Lorem, ipsum</p>
-            <button class="bg-secondary-100 text-white py-1 px-2 rounded-full mt-2 text-sm active:bg-secondary-200">Show
-              Ingredients</button>
-          </div>
-          <div class="badge flex items-center gap-1">
-            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>50 Minutes</span>
-          </div>
-        </div>
-
-        <!-- CARD -->
-        <div class="card hover:shadow-xl">
-          <img src="dist/img/bicol-express-recipe-1.jpg" alt="pinoy chicken adobo"
-            class="w-full h-40 md:h-52 object-cover">
-          <div class="p-6">
-            <h1 class="text-lg">Bicol Express</h1>
-            <p class="text-sm">- Lorem, ipsum</p>
-            <button class="bg-secondary-100 text-white py-1 px-2 rounded-full mt-2 text-sm active:bg-secondary-200">Show
-              Ingredients</button>
-          </div>
-          <div class="badge flex items-center gap-1">
-            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>45 Minutes</span>
-          </div>
-        </div>
+      <div class="z-10 absolute md:flex flex-col items-end mb-32">
+        <h1 class="text-primary  text-4xl md:text-5xl uppercase tracking-widest">Filipino Recipes</h1>
+        <p class="text-primary text-sm tracking-widest w-80 text-center md:text-right ">Lorem ipsum dolor sit amet
+          consectetur
+          adipisicing elit. Nobis
+          omnis
+          explicabo eum
+          ad dignissimos? Nihil
+          voluptatibus magnam iure nesciunt minima?</p>
       </div>
-
-      <!-- MORE BUTTON -->
-      <div class="text-center p-6">
-
-        <a href="#" class="btn rounded-full px-3 active:bg-secondary-200 text-sm hover:shadow-xl">More...</a>
-      </div>
-
     </main>
   </div>
 
